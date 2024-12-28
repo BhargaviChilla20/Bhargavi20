@@ -46,9 +46,6 @@ ggplot(df_proportions, aes(x = Universe, y = Proportion, fill = Alignment)) +
   ) +
   theme_minimal() +
   scale_fill_manual(values = c("Good" = "green", "Bad" = "red", "Neutral" = "gray"))
-
-
-
 ggplot(marvel, aes(x = Appearances)) +
   geom_histogram(aes(y = ..density..), bins = 10, fill = "lightblue", color = "black", alpha = 0.6) +  
   stat_function(fun = dnorm, args = list(mean = mean(marvel$Appearances, na.rm = TRUE), 
