@@ -16,7 +16,6 @@ head(marvel, 2)
 
 library(ggplot2)
 
-# Assuming your data is named 'marvel'
 ggplot(marvel, aes(x = Alignment, y = Universe, color = Alignment)) +
   geom_jitter(position = position_jitter(width = 0.3, height = 0.2), size = 3, alpha = 0.6) +  
   labs(
