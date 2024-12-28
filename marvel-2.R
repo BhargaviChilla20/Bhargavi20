@@ -61,10 +61,6 @@ ggplot(marvel, aes(x = Appearances)) +
   ) +
   theme_minimal()
 
-
-
-library(ggplot2)
-
 ggplot(marvel, aes(x = Appearances, y = Universe, fill = Universe)) +
   geom_boxplot(outlier.color = "red", outlier.size = 2) +
   labs(
